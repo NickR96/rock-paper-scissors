@@ -15,8 +15,7 @@ function playGame() {
         return input + ' is not a valid option'}
         
     }
-
-    let userChoiceInput = getUserInput((prompt(`enter choice`, "")))
+    let userChoiceInput = getUserInput((prompt(`enter choice`, "").toLowerCase()))
 
     let choices = ['rock', 'paper', 'scissors']
     function getComputerChoice() {
